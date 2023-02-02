@@ -5,6 +5,7 @@ services:
     build: .
     container_name: autoposting_bot
     command: python main.py
+    restart: unless-stopped
     ports:
       - 80:80
     volumes:
